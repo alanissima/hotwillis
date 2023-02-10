@@ -48,7 +48,7 @@ function carregarClientes() {
         var botao = criarBotao("Alterar", "btn btn-primary", 
             ALTERAR, clientes[i].id);
         linha.insertCell().appendChild(botao);
-        var botao2 = criarBotao("Excluir", "btn btn-danger", 
+        var botao2 = criarBotao("Excluir", "btn excluir", 
             EXCLUIR, clientes[i].id);
         linha.insertCell().appendChild(botao2);
     }

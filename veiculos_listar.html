@@ -7,21 +7,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Aula tópicos II</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>HOT</title>
   </head>
-  <body onload="carregarClientes();">
+
+
+  <header>
+    <img src="hotwillis.png" class="logo" alt="HOTWILLIS">
+  </header>
+<br><br><br>
+
+  <body onload="carregarVeiculos();">
     <div class="container">
       <div class="row" style="margin-top: 20px;">
           <div class="col-12">
-              <h3>Listagem de veiculos</h3>
+              <h3>Carros Hotwillis</h3>
           </div>
       </div>
 
       <div class="row" style="margin-top: 20px;">
         <div class="col-6">
           <!--button type="button" class="btn btn-outline-primary" onclick="carregarClientes();">Carregar clientes</button-->
-          <button type="button" class="btn btn-outline-success" onclick="incluirVeiculo();">Incluir veiculo</button>
+          <button type="button" class="btn adicionar" onclick="incluirVeiculo();">Incluir veiculo</button>
         </div>
 
         <div class="col-6">

@@ -45,3 +45,66 @@ a.menu{
     color: #F8F6F5;
 
 }
+
+table, tr, th, td{
+    border: transparent !important;
+}
+
+.adicionar{
+    background-color: #fceb41;
+}
+
+.adicionar:hover{
+    background-color: #333;
+    color: #fceb41;
+}
+
+.excluir{
+    background-color: #e5242c;
+    color: #fff;
+}
+
+.excluir:hover{
+    background-color: #333;
+    color: #e5242c;
+}
+
+.alert{
+    background-color: #e5242c;
+    color: #F8F6F5;
+    border: none;
+}
+
+.btn-success{
+    background-color: #4de240;
+    border: none;
+    color: #333;
+}
+
+.btn-outline-secondary{
+    border-color: #333;
+    color: #333
+}
+
+.btn-outline-secondary:hover{
+    border-color: #333;
+    background-color: #333333;
+}
+
+input{
+    background-color: #fceb41 !important;
+    border-radius: 0  !important;
+}
+
+input:focus{
+    background-color: #F8F6F5 !important;
+    border: 0;
+}
+
+label{
+    padding-bottom: 0;
+}
+
+#operacao, h3{
+    font-weight: 600;
+}

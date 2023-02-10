@@ -12,7 +12,7 @@ const URL_API = "http://localhost:8080/veiculos"
 const STATUS_OK = 200;
 const STATUS_CREATED = 201;
 
-const IDX_STORAGE_ID = 'idVeiculo';
+const IDX_STORAGE_ID = 'id';
 const IDX_STORAGE_MSG_SUCESSO = 'msgSucesso';
 const IDX_STORAGE_MSG_ERRO = 'msgErro';
 
@@ -45,11 +45,11 @@ function carregarVeiculos() {
         linha.insertCell().innerHTML = veiculos[i].placa;
         linha.insertCell().innerHTML = veiculos[i].modelo;
         linha.insertCell().innerHTML = veiculos[i].fabricante;
-        linha.insertCell().innerHTML = veiculos[i].ano_fabricacao;
+        linha.insertCell().innerHTML = veiculos[i].anoFabricacao;
         var botao = criarBotao("Alterar", "btn btn-primary", 
             ALTERAR, veiculos[i].id);
         linha.insertCell().appendChild(botao);
-        var botao2 = criarBotao("Excluir", "btn btn-danger", 
+        var botao2 = criarBotao("Excluir", "btn excluir", 
             EXCLUIR, veiculos[i].id);
         linha.insertCell().appendChild(botao2);
     }
@@ -82,13 +82,14 @@ function salvarVeiculo() {
     var veiculo = { "placa": placa,
                     "modelo": modelo,
                     "fabricante": fabricante,
-                    "ano_fabricacao": ano_fabricacao };
+                    "anoFabricacao": ano_fabricacao };
+    
 
     //Salvar o cliente a partir da API
     var xhttp = new XMLHttpRequest();
     xhttp.open('POST', URL_API, false);
     xhttp.setRequestHeader('Content-Type', 'application/json');
-    xhttp.send(JSON.stringify(cliente));
+    xhttp.send(JSON.stringify(veiculo));
 
     if(xhttp.status == STATUS_CREATED) {
         window.location = 'veiculos_listar.html';
