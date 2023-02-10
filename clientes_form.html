@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Aula tópicos II</title>
+  </head>
+  <body onload="carregarDadosCliente();">
+    <div class="container">
+      <div class="row" style="margin-top: 20px;">
+          <div class="col-12">
+              <h3 id="operacao">Formulário de cliente</h3>
+          </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+          <div class="col-6">
+              <form id="frmCliente">
+
+                <div class="form-group">
+                    <label for="txtLogin">Nome</label>
+                    <input type="text" class="form-control" id="txtNome" maxlength="50" style="width: 450px;" />
+                </div>
+
+                <div class="form-group">
+                  <label for="txtEmail">E-mail</label>
+                  <input type="email" class="form-control" id="txtEmail" size="50" maxlength="100" style="width: 450px;" />
+                </div>
+
+                <div class="form-group">
+                  <label for="txtTelefone">Telefone</label>
+                  <input type="email" class="form-control" id="txtTelefone" size="20" maxlength="20" style="width: 200px;" />
+                </div>
+
+              </form>
+          </div>
+
+          <div class="col-6">
+            <div id="divErro" class="alert alert-danger" style="display: none;">
+            </div>
+          </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-6">
+          <button type="button" class="btn btn-success" onclick="salvarCliente();">Gravar</button>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-12">
+          <button type="button" class="btn btn-outline-secondary" onclick="window.location = 'clientes_listar.html';">Voltar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS clientes -->  
+    <script src="clientes.js"></script>
+
+    <!-- JS Bootstrap -->
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
